@@ -43,8 +43,9 @@ class HomeViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "ShowDetail",
-           let detailViewController = segue.destination as? WallpaperDetailViewController {
+           let detailViewController = segue.destination as? WallpaperDetailViewController , let cell = sender as? WallpaperCollectionViewCell{
             detailViewController.wallpaper = selectedWallpaper
+            detailViewController.photoImage = cell.getImage()
         }
     }
 }
@@ -52,7 +53,8 @@ class HomeViewController: UIViewController {
 extension HomeViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         selectedWallpaper = wallpapers[indexPath.item]
-        performSegue(withIdentifier: "ShowDetail", sender: self)
+        let selectedCell = collectionView.cellForItem(at: indexPath)
+        performSegue(withIdentifier: "ShowDetail", sender: selectedCell)
     }
 }
 

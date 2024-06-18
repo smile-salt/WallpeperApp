@@ -13,7 +13,7 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="WallpaperDetailViewController" customModule="WallpaperApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8bC-Xf-vdC" customClass="PhotoDetailView" customModule="WallpaperApp" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -133,6 +133,10 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bcV-Lh-kuX" secondAttribute="trailing" constant="16" id="dDw-vM-Jmd"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BdC-2U-wJ1" secondAttribute="trailing" constant="16" id="wOv-3u-b8l"/>
                         </constraints>
+                        <connections>
+                            <outlet property="detailLabel" destination="oGu-nL-jdw" id="EdR-71-pyK"/>
+                            <outlet property="imageView" destination="BdC-2U-wJ1" id="1WC-Yv-ZaD"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="Jwi-y5-BNH"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>

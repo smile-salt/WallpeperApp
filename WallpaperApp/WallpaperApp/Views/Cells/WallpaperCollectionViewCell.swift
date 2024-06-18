@@ -70,4 +70,9 @@ class WallpaperCollectionViewCell: UICollectionViewCell {
         
         nameLabel.text = wallpaper.user.name
     }
+    
+    func getImage() -> UIImage? {
+        return imageView.image
+    }
+    
 }

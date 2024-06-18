@@ -10,6 +10,7 @@ import UIKit
 
 class WallpaperDetailViewController: UIViewController {
     var wallpaper: UnsplashPhoto?
+    var photoImage: UIImage?
     
     @IBOutlet private var imageView: UIImageView!
     @IBOutlet private var userNameLabel: UILabel!
@@ -51,28 +52,23 @@ class WallpaperDetailViewController: UIViewController {
         
         view.sendSubviewToBack(scrollView)
         
-        if let wallpaper = wallpaper, let url = URL(string: wallpaper.urls.full) {
-            URLSession.shared.dataTask(with: url) { [weak self] (data, response, error) in
-                if let data = data, let image = UIImage(data: data) {
-                    DispatchQueue.main.async {
-                        self?.imageView.image = image
-                        self?.updateImageViewAspectRatio()
-                        
-                    }
-                }
-            }.resume()
-            
-            let profileURL = URL(string: "https://unsplash.com/ja/@\(wallpaper.user.username)")!
-            
-            let attributedString = NSAttributedString(string: wallpaper.user.username, attributes: [.link: profileURL])
-            self.userNameLabel.attributedText = attributedString
-            self.userNameLabel.text = wallpaper.user.username
-            self.locationLabel.text = wallpaper.user.location
-            
-            let date = wallpaper.updatedAt.toDate(format: "yyyy-MM-dd'T'HH:mm:ssZ")
-            let dateString = date?.toString(format: "yyyy年MM月dd日")
-            self.updateAtLabel.text = dateString
+        guard let wallpaper = wallpaper else {
+            return
         }
+        
+        updateImageViewAspectRatio()
+        
+        let profileURL = URL(string: "https://unsplash.com/ja/@\(wallpaper.user.username)")!
+        
+        let attributedString = NSAttributedString(string: wallpaper.user.username, attributes: [.link: profileURL])
+        self.userNameLabel.attributedText = attributedString
+        self.userNameLabel.text = wallpaper.user.username
+        self.locationLabel.text = wallpaper.user.location
+        
+        let date = wallpaper.updatedAt.toDate(format: "yyyy-MM-dd'T'HH:mm:ssZ")
+        let dateString = date?.toString(format: "yyyy年MM月dd日")
+        self.updateAtLabel.text = dateString
+        
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(openProfile(_:)))
         self.userNameLabel.isUserInteractionEnabled = true
         self.userNameLabel.addGestureRecognizer(tapGesture)
@@ -87,10 +83,10 @@ class WallpaperDetailViewController: UIViewController {
     }
     
     func updateImageViewAspectRatio() {
-        guard let image = imageView.image else {
+        guard let image = photoImage else {
             return
         }
-        
+        imageView.image = image
         let aspectRatio = image.size.width / image.size.height
         imageView.widthAnchor.constraint(equalTo: imageView.heightAnchor, multiplier: aspectRatio).isActive = true
     }

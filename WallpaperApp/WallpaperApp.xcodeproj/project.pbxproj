@@ -16,6 +16,7 @@
 		3205D12A2C1200E6004DEC5A /* SearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3205D1292C1200E6004DEC5A /* SearchResponse.swift */; };
 		3205D12D2C15ECBB004DEC5A /* SectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3205D12B2C15ECBB004DEC5A /* SectionHeader.swift */; };
 		3205D12E2C15ECBB004DEC5A /* SectionHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3205D12C2C15ECBB004DEC5A /* SectionHeader.xib */; };
+		CEC2ED992C2036E400835799 /* PhotoDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC2ED982C2036E400835799 /* PhotoDetailView.swift */; };
 		E1065FE22BD22DD100D3C73A /* WallpaperCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1065FE12BD22DD100D3C73A /* WallpaperCollectionViewCell.swift */; };
 		E1616BAB2BD2078500E7A4CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1616BAA2BD2078500E7A4CB /* AppDelegate.swift */; };
 		E1616BAD2BD2078500E7A4CB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1616BAC2BD2078500E7A4CB /* SceneDelegate.swift */; };
@@ -40,6 +41,7 @@
 		3205D1292C1200E6004DEC5A /* SearchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResponse.swift; sourceTree = "<group>"; };
 		3205D12B2C15ECBB004DEC5A /* SectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeader.swift; sourceTree = "<group>"; };
 		3205D12C2C15ECBB004DEC5A /* SectionHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SectionHeader.xib; sourceTree = "<group>"; };
+		CEC2ED982C2036E400835799 /* PhotoDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailView.swift; sourceTree = "<group>"; };
 		E1065FE12BD22DD100D3C73A /* WallpaperCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallpaperCollectionViewCell.swift; sourceTree = "<group>"; };
 		E1616BA72BD2078500E7A4CB /* WallpaperApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WallpaperApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1616BAA2BD2078500E7A4CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -73,6 +75,7 @@
 				3205D1232C0F6571004DEC5A /* Cells */,
 				3205D1182C0A11D2004DEC5A /* FooterTabView.swift */,
 				3205D11A2C0A11E9004DEC5A /* FooterTabView.xib */,
+				CEC2ED982C2036E400835799 /* PhotoDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -226,6 +229,7 @@
 				E1616BC32BD21BD000E7A4CB /* WallpaperDetailViewController.swift in Sources */,
 				E1616BBF2BD209BB00E7A4CB /* API.swift in Sources */,
 				E1616BAB2BD2078500E7A4CB /* AppDelegate.swift in Sources */,
+				CEC2ED992C2036E400835799 /* PhotoDetailView.swift in Sources */,
 				E1065FE22BD22DD100D3C73A /* WallpaperCollectionViewCell.swift in Sources */,
 				E1616BAD2BD2078500E7A4CB /* SceneDelegate.swift in Sources */,
 				3205D1202C0CB164004DEC5A /* TagSearchViewController.swift in Sources */,
