@@ -12,6 +12,8 @@ class WallpaperDetailViewController: UIViewController {
     var wallpaper: UnsplashPhoto?
     var photoImage: UIImage?
     
+    @IBOutlet weak var photoDetailView: PhotoDetailView!
+    
     @IBOutlet private var imageView: UIImageView!
     @IBOutlet private var userNameLabel: UILabel!
     @IBOutlet private var locationLabel: UILabel!
@@ -29,28 +31,7 @@ class WallpaperDetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         view.backgroundColor = .white
-        
-        let scrollView = UIScrollView()
-        view.addSubview(scrollView)
-        scrollView.translatesAutoresizingMaskIntoConstraints = false
-        scrollView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
-        scrollView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
-        scrollView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
-        scrollView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
-        
-        let contentView = UIView()
-        scrollView.addSubview(contentView)
-        contentView.translatesAutoresizingMaskIntoConstraints = false
-        contentView.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor).isActive = true
-        contentView.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor).isActive = true
-        contentView.topAnchor.constraint(equalTo: scrollView.topAnchor).isActive = true
-        contentView.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor).isActive = true
-        contentView.widthAnchor.constraint(equalTo: scrollView.widthAnchor).isActive = true
-        contentView.heightAnchor.constraint(equalTo: scrollView.heightAnchor).isActive = true
-        
-        view.sendSubviewToBack(scrollView)
         
         guard let wallpaper = wallpaper else {
             return
