@@ -16,7 +16,6 @@
 		3205D12A2C1200E6004DEC5A /* SearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3205D1292C1200E6004DEC5A /* SearchResponse.swift */; };
 		3205D12D2C15ECBB004DEC5A /* SectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3205D12B2C15ECBB004DEC5A /* SectionHeader.swift */; };
 		3205D12E2C15ECBB004DEC5A /* SectionHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3205D12C2C15ECBB004DEC5A /* SectionHeader.xib */; };
-		CEC2ED992C2036E400835799 /* PhotoDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC2ED982C2036E400835799 /* PhotoDetailView.swift */; };
 		CEC2ED9B2C229C1900835799 /* PhotoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC2ED9A2C229C1900835799 /* PhotoDetailViewController.swift */; };
 		E1065FE22BD22DD100D3C73A /* WallpaperCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1065FE12BD22DD100D3C73A /* WallpaperCollectionViewCell.swift */; };
 		E1616BAB2BD2078500E7A4CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1616BAA2BD2078500E7A4CB /* AppDelegate.swift */; };
@@ -28,7 +27,6 @@
 		E1616BBF2BD209BB00E7A4CB /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1616BBE2BD209BB00E7A4CB /* API.swift */; };
 		E1616BC12BD20A1500E7A4CB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1616BC02BD20A1500E7A4CB /* HomeViewController.swift */; };
 		E1616BC32BD21BD000E7A4CB /* WallpaperDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1616BC22BD21BD000E7A4CB /* WallpaperDetailViewController.swift */; };
-		E18548612C1705F2003683AE /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18548602C1705F2003683AE /* ImageView.swift */; };
 		E1FE51222C1BC92B001BA1EC /* AppOverviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FE51212C1BC92A001BA1EC /* AppOverviewViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -42,7 +40,6 @@
 		3205D1292C1200E6004DEC5A /* SearchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResponse.swift; sourceTree = "<group>"; };
 		3205D12B2C15ECBB004DEC5A /* SectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeader.swift; sourceTree = "<group>"; };
 		3205D12C2C15ECBB004DEC5A /* SectionHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SectionHeader.xib; sourceTree = "<group>"; };
-		CEC2ED982C2036E400835799 /* PhotoDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailView.swift; sourceTree = "<group>"; };
 		CEC2ED9A2C229C1900835799 /* PhotoDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailViewController.swift; sourceTree = "<group>"; };
 		E1065FE12BD22DD100D3C73A /* WallpaperCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallpaperCollectionViewCell.swift; sourceTree = "<group>"; };
 		E1616BA72BD2078500E7A4CB /* WallpaperApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WallpaperApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -56,7 +53,6 @@
 		E1616BBE2BD209BB00E7A4CB /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		E1616BC02BD20A1500E7A4CB /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		E1616BC22BD21BD000E7A4CB /* WallpaperDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallpaperDetailViewController.swift; sourceTree = "<group>"; };
-		E18548602C1705F2003683AE /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
 		E1FE51212C1BC92A001BA1EC /* AppOverviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppOverviewViewController.swift; path = ../Models/AppOverviewViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -77,7 +73,6 @@
 				3205D1232C0F6571004DEC5A /* Cells */,
 				3205D1182C0A11D2004DEC5A /* FooterTabView.swift */,
 				3205D11A2C0A11E9004DEC5A /* FooterTabView.xib */,
-				CEC2ED982C2036E400835799 /* PhotoDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -118,7 +113,6 @@
 		E1616B9E2BD2078500E7A4CB = {
 			isa = PBXGroup;
 			children = (
-				E18548602C1705F2003683AE /* ImageView.swift */,
 				E1616BA92BD2078500E7A4CB /* WallpaperApp */,
 				E1616BA82BD2078500E7A4CB /* Products */,
 			);
@@ -224,7 +218,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E18548612C1705F2003683AE /* ImageView.swift in Sources */,
 				3205D12A2C1200E6004DEC5A /* SearchResponse.swift in Sources */,
 				E1616BC12BD20A1500E7A4CB /* HomeViewController.swift in Sources */,
 				E1616BAF2BD2078500E7A4CB /* ViewController.swift in Sources */,
@@ -232,7 +225,6 @@
 				E1616BC32BD21BD000E7A4CB /* WallpaperDetailViewController.swift in Sources */,
 				E1616BBF2BD209BB00E7A4CB /* API.swift in Sources */,
 				E1616BAB2BD2078500E7A4CB /* AppDelegate.swift in Sources */,
-				CEC2ED992C2036E400835799 /* PhotoDetailView.swift in Sources */,
 				CEC2ED9B2C229C1900835799 /* PhotoDetailViewController.swift in Sources */,
 				E1065FE22BD22DD100D3C73A /* WallpaperCollectionViewCell.swift in Sources */,
 				E1616BAD2BD2078500E7A4CB /* SceneDelegate.swift in Sources */,
