@@ -18,16 +18,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="361" placeholderIntrinsicHeight="361" translatesAutoresizingMaskIntoConstraints="NO" id="F2C-Tt-n8d">
-                                <rect key="frame" x="15" y="74" width="363" height="361"/>
+                                <rect key="frame" x="15" y="74" width="363" height="363"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="F2C-Tt-n8d" secondAttribute="height" multiplier="1:1" id="ugH-Cz-K6e"/>
+                                </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="写真情報" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wR3-xR-rdz">
-                                <rect key="frame" x="16" y="465" width="361" height="20.333333333333314"/>
+                                <rect key="frame" x="16" y="467" width="361" height="20.333333333333314"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="BNi-OM-GIe">
-                                <rect key="frame" x="15" y="497.33333333333326" width="363" height="148"/>
+                                <rect key="frame" x="15" y="499.33333333333326" width="363" height="148"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bEs-9L-pwk">
                                         <rect key="frame" x="0.0" y="0.0" width="363" height="1"/>

@@ -12,8 +12,6 @@ class WallpaperDetailViewController: UIViewController {
     var wallpaper: UnsplashPhoto?
     var photoImage: UIImage?
     
-    @IBOutlet weak var photoDetailView: PhotoDetailView!
-    
     @IBOutlet private var imageView: UIImageView!
     @IBOutlet private var userNameLabel: UILabel!
     @IBOutlet private var locationLabel: UILabel!
@@ -32,12 +30,11 @@ class WallpaperDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
+        imageView.image = photoImage
         
         guard let wallpaper = wallpaper else {
             return
         }
-        
-        updateImageViewAspectRatio()
         
         let profileURL = URL(string: "https://unsplash.com/ja/@\(wallpaper.user.username)")!
         
@@ -63,14 +60,6 @@ class WallpaperDetailViewController: UIViewController {
         UIApplication.shared.open(url)
     }
     
-    func updateImageViewAspectRatio() {
-        guard let image = photoImage else {
-            return
-        }
-        imageView.image = image
-        let aspectRatio = image.size.width / image.size.height
-        imageView.widthAnchor.constraint(equalTo: imageView.heightAnchor, multiplier: aspectRatio).isActive = true
-    }
 }
 
 private extension String {
