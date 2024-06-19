@@ -141,8 +141,10 @@
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <connections>
+                        <outlet property="detailInfomationStackView" destination="BNi-OM-GIe" id="03k-Y1-CTF"/>
                         <outlet property="imageView" destination="F2C-Tt-n8d" id="pqs-ok-CTh"/>
                         <outlet property="locationLabel" destination="Rve-5g-Kef" id="mQP-Rb-p4H"/>
+                        <outlet property="photoInfoLabel" destination="wR3-xR-rdz" id="ETt-ib-PQT"/>
                         <outlet property="updateAtLabel" destination="gCM-0e-COD" id="8wA-Gp-8go"/>
                         <outlet property="userNameLabel" destination="ZOS-Gr-jw4" id="DYI-F9-cDq"/>
                     </connections>
