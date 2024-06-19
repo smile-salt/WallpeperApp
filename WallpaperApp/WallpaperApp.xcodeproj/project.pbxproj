@@ -17,6 +17,7 @@
 		3205D12D2C15ECBB004DEC5A /* SectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3205D12B2C15ECBB004DEC5A /* SectionHeader.swift */; };
 		3205D12E2C15ECBB004DEC5A /* SectionHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3205D12C2C15ECBB004DEC5A /* SectionHeader.xib */; };
 		CEC2ED992C2036E400835799 /* PhotoDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC2ED982C2036E400835799 /* PhotoDetailView.swift */; };
+		CEC2ED9B2C229C1900835799 /* PhotoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC2ED9A2C229C1900835799 /* PhotoDetailViewController.swift */; };
 		E1065FE22BD22DD100D3C73A /* WallpaperCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1065FE12BD22DD100D3C73A /* WallpaperCollectionViewCell.swift */; };
 		E1616BAB2BD2078500E7A4CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1616BAA2BD2078500E7A4CB /* AppDelegate.swift */; };
 		E1616BAD2BD2078500E7A4CB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1616BAC2BD2078500E7A4CB /* SceneDelegate.swift */; };
@@ -42,6 +43,7 @@
 		3205D12B2C15ECBB004DEC5A /* SectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeader.swift; sourceTree = "<group>"; };
 		3205D12C2C15ECBB004DEC5A /* SectionHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SectionHeader.xib; sourceTree = "<group>"; };
 		CEC2ED982C2036E400835799 /* PhotoDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailView.swift; sourceTree = "<group>"; };
+		CEC2ED9A2C229C1900835799 /* PhotoDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailViewController.swift; sourceTree = "<group>"; };
 		E1065FE12BD22DD100D3C73A /* WallpaperCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallpaperCollectionViewCell.swift; sourceTree = "<group>"; };
 		E1616BA72BD2078500E7A4CB /* WallpaperApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WallpaperApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1616BAA2BD2078500E7A4CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 				3205D11F2C0CB164004DEC5A /* TagSearchViewController.swift */,
 				E1FE51212C1BC92A001BA1EC /* AppOverviewViewController.swift */,
 				E1616BC22BD21BD000E7A4CB /* WallpaperDetailViewController.swift */,
+				CEC2ED9A2C229C1900835799 /* PhotoDetailViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -230,6 +233,7 @@
 				E1616BBF2BD209BB00E7A4CB /* API.swift in Sources */,
 				E1616BAB2BD2078500E7A4CB /* AppDelegate.swift in Sources */,
 				CEC2ED992C2036E400835799 /* PhotoDetailView.swift in Sources */,
+				CEC2ED9B2C229C1900835799 /* PhotoDetailViewController.swift in Sources */,
 				E1065FE22BD22DD100D3C73A /* WallpaperCollectionViewCell.swift in Sources */,
 				E1616BAD2BD2078500E7A4CB /* SceneDelegate.swift in Sources */,
 				3205D1202C0CB164004DEC5A /* TagSearchViewController.swift in Sources */,

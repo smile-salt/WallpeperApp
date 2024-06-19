@@ -17,13 +17,6 @@ class WallpaperDetailViewController: UIViewController {
     @IBOutlet private var locationLabel: UILabel!
     @IBOutlet private var updateAtLabel: UILabel!
     
-    @IBOutlet weak var detailInfomationStackView: UIStackView!
-    @IBOutlet weak var photoInfoLabel: UILabel!
-    
-    var isPhotoViewing = false
-    var originalPosition: CGPoint!
-    var originalSize: CGSize!
-    
     init(wallpaper: UnsplashPhoto) {
         self.wallpaper = wallpaper
         super.init(nibName: nil, bundle: nil)
@@ -42,10 +35,6 @@ class WallpaperDetailViewController: UIViewController {
         imageView.isUserInteractionEnabled = true
         let photoTapGesture = UITapGestureRecognizer(target: self, action: #selector(tappedPhotoImage))
         imageView.addGestureRecognizer(photoTapGesture)
-        
-        view.isUserInteractionEnabled = true
-        let viewTapGesture = UITapGestureRecognizer(target: self, action: #selector(tappedView))
-        view.addGestureRecognizer(viewTapGesture)
         
         guard let wallpaper = wallpaper else {
             return
@@ -67,13 +56,6 @@ class WallpaperDetailViewController: UIViewController {
         self.userNameLabel.addGestureRecognizer(tapGesture)
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        // 画像の設定完了後でないとcenterの位置がずれるのでviewDidAppearで実施
-        originalPosition = imageView.center
-        originalSize = imageView.frame.size
-    }
-    
     @objc private func openProfile(_ gesture: UITapGestureRecognizer) {
         guard let url = (gesture.view as? UILabel)?.attributedText?.attribute(.link, at: 0, effectiveRange: nil) as? URL else {
             return
@@ -82,49 +64,15 @@ class WallpaperDetailViewController: UIViewController {
     }
     
     @objc func tappedPhotoImage() {
-        togglePhotoViewingStyle()
+        performSegue(withIdentifier: "ShowPhotoDetailModal", sender: nil)
     }
     
-    @objc func tappedView() {
-        // 詳細ビュー状態の解除は写真以外の箇所でも反応する必要があるため実装
-        if isPhotoViewing {
-            togglePhotoViewingStyle()
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "ShowPhotoDetailModal",
+           let detailViewController = segue.destination as? PhotoDetailViewController {
+            detailViewController.photoImage = photoImage
         }
     }
-    
-    
-    func togglePhotoViewingStyle() {
-        if isPhotoViewing {
-            detailInfomationStackView.isHidden = false
-            photoInfoLabel.isHidden = false
-            navigationItem.hidesBackButton = false
-            
-            UIView.animate(withDuration: 0.2) {
-                self.view.backgroundColor = .white
-                self.imageView.center = self.originalPosition
-                self.imageView.frame.size = self.originalSize
-            }
-        } else {
-            // 画面中央位置の計算
-            let centerPosition = CGPoint(x: view.bounds.midX, y: view.bounds.midY)
-            detailInfomationStackView.isHidden = true
-            photoInfoLabel.isHidden = true
-            navigationItem.hidesBackButton = true
-            
-            guard let image = photoImage else {
-                return
-            }
-            
-            UIView.animate(withDuration: 0.3) {
-                // 指定のカラーコード
-                self.view.backgroundColor = UIColor(red: 47/255, green: 47/255, blue: 47/255, alpha: 1.0)
-                self.imageView.center = centerPosition
-            }
-        }
-        
-        isPhotoViewing = !isPhotoViewing
-    }
-    
     
     
 }
