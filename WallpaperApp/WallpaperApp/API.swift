@@ -7,32 +7,8 @@
 
 import Foundation
 
-struct UnsplashPhoto: Decodable {
-    let id: String
-    let updatedAt: String
-    let urls: UnsplashPhotoURLs
-    let user: UnsplashUser
-    
-    enum CodingKeys: String, CodingKey {
-        case id
-        case updatedAt = "updated_at"
-        case urls
-        case user
-    }
-}
-
-struct UnsplashUser: Codable {
-    let username: String
-    let name: String
-    let location: String?
-}
-
-struct UnsplashPhotoURLs: Codable {
-    let regular: String
-    let full: String
-}
-
 class UnsplashAPIService {
+    
     private let accessKey = "hZ6EuwcBL2h8ybpYbcLTWVtleTTDznHszzlMP0e5dwQ"
     
     // 新着画像を5枚取得する
@@ -92,4 +68,9 @@ class UnsplashAPIService {
             }
         }.resume()
     }
+}
+
+// SearchのAPIは画像を取得する際の階層がfetchと異なる
+struct SearchResponse: Decodable {
+    let results: [UnsplashPhoto]
 }
