@@ -7,7 +7,7 @@
 
 import Foundation
 
-class UnsplashAPIService {
+class UnsplashAPI {
     
     private let accessKey = "hZ6EuwcBL2h8ybpYbcLTWVtleTTDznHszzlMP0e5dwQ"
     

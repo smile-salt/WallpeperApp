@@ -20,11 +20,10 @@
 		E1065FE22BD22DD100D3C73A /* WallpaperCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1065FE12BD22DD100D3C73A /* WallpaperCollectionViewCell.swift */; };
 		E1616BAB2BD2078500E7A4CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1616BAA2BD2078500E7A4CB /* AppDelegate.swift */; };
 		E1616BAD2BD2078500E7A4CB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1616BAC2BD2078500E7A4CB /* SceneDelegate.swift */; };
-		E1616BAF2BD2078500E7A4CB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1616BAE2BD2078500E7A4CB /* ViewController.swift */; };
 		E1616BB22BD2078500E7A4CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1616BB02BD2078500E7A4CB /* Main.storyboard */; };
 		E1616BB42BD2078700E7A4CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1616BB32BD2078700E7A4CB /* Assets.xcassets */; };
 		E1616BB72BD2078700E7A4CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1616BB52BD2078700E7A4CB /* LaunchScreen.storyboard */; };
-		E1616BBF2BD209BB00E7A4CB /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1616BBE2BD209BB00E7A4CB /* API.swift */; };
+		E1616BBF2BD209BB00E7A4CB /* UnsplashAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1616BBE2BD209BB00E7A4CB /* UnsplashAPI.swift */; };
 		E1616BC12BD20A1500E7A4CB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1616BC02BD20A1500E7A4CB /* HomeViewController.swift */; };
 		E1616BC32BD21BD000E7A4CB /* WallpaperDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1616BC22BD21BD000E7A4CB /* WallpaperDetailViewController.swift */; };
 		E1FE51222C1BC92B001BA1EC /* AppOverviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FE51212C1BC92A001BA1EC /* AppOverviewViewController.swift */; };
@@ -45,12 +44,11 @@
 		E1616BA72BD2078500E7A4CB /* WallpaperApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WallpaperApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1616BAA2BD2078500E7A4CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E1616BAC2BD2078500E7A4CB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E1616BAE2BD2078500E7A4CB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E1616BB12BD2078500E7A4CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E1616BB32BD2078700E7A4CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E1616BB62BD2078700E7A4CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E1616BB82BD2078700E7A4CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E1616BBE2BD209BB00E7A4CB /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		E1616BBE2BD209BB00E7A4CB /* UnsplashAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnsplashAPI.swift; sourceTree = "<group>"; };
 		E1616BC02BD20A1500E7A4CB /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		E1616BC22BD21BD000E7A4CB /* WallpaperDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallpaperDetailViewController.swift; sourceTree = "<group>"; };
 		E1FE51212C1BC92A001BA1EC /* AppOverviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppOverviewViewController.swift; path = ../Models/AppOverviewViewController.swift; sourceTree = "<group>"; };
@@ -106,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				3205D1292C1200E6004DEC5A /* UnsplashPhoto.swift */,
+				E1616BBE2BD209BB00E7A4CB /* UnsplashAPI.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -134,8 +133,6 @@
 				3205D1172C0A1155004DEC5A /* Views */,
 				E1616BAA2BD2078500E7A4CB /* AppDelegate.swift */,
 				E1616BAC2BD2078500E7A4CB /* SceneDelegate.swift */,
-				E1616BAE2BD2078500E7A4CB /* ViewController.swift */,
-				E1616BBE2BD209BB00E7A4CB /* API.swift */,
 				E1616BB02BD2078500E7A4CB /* Main.storyboard */,
 				E1616BB32BD2078700E7A4CB /* Assets.xcassets */,
 				E1616BB52BD2078700E7A4CB /* LaunchScreen.storyboard */,
@@ -220,10 +217,9 @@
 			files = (
 				3205D12A2C1200E6004DEC5A /* UnsplashPhoto.swift in Sources */,
 				E1616BC12BD20A1500E7A4CB /* HomeViewController.swift in Sources */,
-				E1616BAF2BD2078500E7A4CB /* ViewController.swift in Sources */,
 				E1FE51222C1BC92B001BA1EC /* AppOverviewViewController.swift in Sources */,
 				E1616BC32BD21BD000E7A4CB /* WallpaperDetailViewController.swift in Sources */,
-				E1616BBF2BD209BB00E7A4CB /* API.swift in Sources */,
+				E1616BBF2BD209BB00E7A4CB /* UnsplashAPI.swift in Sources */,
 				E1616BAB2BD2078500E7A4CB /* AppDelegate.swift in Sources */,
 				CEC2ED9B2C229C1900835799 /* PhotoDetailViewController.swift in Sources */,
 				E1065FE22BD22DD100D3C73A /* WallpaperCollectionViewCell.swift in Sources */,

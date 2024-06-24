@@ -23,7 +23,7 @@ class HomeViewController: UIViewController {
     }
     
     var wallpapers: [UnsplashPhoto] = []
-    let apiService = UnsplashAPIService()
+    let apiService = UnsplashAPI()
     let cellReuseIdentifier = "WallpaperCell"
     var selectedWallpaper: UnsplashPhoto?
     

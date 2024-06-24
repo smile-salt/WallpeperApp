@@ -19,7 +19,7 @@ enum ColorTag: String, CaseIterable {
 final class TagSearchViewController: UIViewController {
 
     private var wallpapers: [UnsplashPhoto] = []
-    private let apiService = UnsplashAPIService()
+    private let apiService = UnsplashAPI()
     private var selectedTag: ColorTag = .red
     private var selectedWallpaper: UnsplashPhoto?
     
