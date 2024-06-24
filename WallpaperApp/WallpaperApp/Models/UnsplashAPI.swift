@@ -11,7 +11,7 @@ class UnsplashAPI {
     
     private let accessKey = "hZ6EuwcBL2h8ybpYbcLTWVtleTTDznHszzlMP0e5dwQ"
     
-    // 新着画像を5枚取得する
+    // 新着画像を取得する
     func fetchLatestWallpapers(numberOfPages: Int, completion: @escaping ([UnsplashPhoto]?) -> Void) {
         let urlString = "https://api.unsplash.com/photos?per_page=\(numberOfPages)&order_by=latest&client_id=\(accessKey)"
         guard let url = URL(string: urlString) else {
@@ -41,7 +41,7 @@ class UnsplashAPI {
         }.resume()
     }
     
-    // 色指定で画像を5枚取得する
+    // 色指定で画像を取得する
     func searchWallpapersByColor(numberOfPages: Int, colorTag: ColorTag, completion: @escaping ([UnsplashPhoto]?) -> Void) {
         let urlString = "https://api.unsplash.com/search/photos?query=\(colorTag.rawValue)&per_page=\(numberOfPages)&color=\(colorTag.rawValue)&client_id=\(accessKey)"
         guard let url = URL(string: urlString) else {
