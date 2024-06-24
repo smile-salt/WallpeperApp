@@ -23,6 +23,8 @@ final class TagSearchViewController: UIViewController {
     private var selectedTag: ColorTag = .red
     private var selectedWallpaper: UnsplashPhoto?
     
+    let pages = 5 // 画面内のタイル枚数
+    
     @IBOutlet private var tagCollectionView: UICollectionView!  {
         didSet {
             tagCollectionView.register(UINib(nibName: "TagCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "TagCollectionViewCell")
@@ -60,7 +62,7 @@ final class TagSearchViewController: UIViewController {
     }
     
     private func searchWallpapers(colorTag: ColorTag){
-        apiService.searchWallpapers(colorTag: colorTag) { [weak self] photos in
+        apiService.searchWallpapersByColor(numberOfPages: pages, colorTag: colorTag) { [weak self] photos in
             if let photos = photos {
                 self?.wallpapers = photos
                 DispatchQueue.main.async {

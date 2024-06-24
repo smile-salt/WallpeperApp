@@ -10,6 +10,7 @@ import UIKit
 private let reuseIdentifier = "Cell"
 
 class HomeViewController: UIViewController {
+    
     @IBOutlet private var collectionView: UICollectionView! {
         didSet {
             collectionView.register(WallpaperCollectionViewCell.self, forCellWithReuseIdentifier: cellReuseIdentifier)
@@ -26,17 +27,20 @@ class HomeViewController: UIViewController {
     let cellReuseIdentifier = "WallpaperCell"
     var selectedWallpaper: UnsplashPhoto?
     
+    let pages = 5 // 画面内のタイル枚数
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        apiService.fetchLatestWallpapers{ [weak self] (photos) in
+        apiService.fetchLatestWallpapers(numberOfPages: pages, completion: { [weak self] (photos) in
             if let photos = photos {
                 self?.wallpapers = photos
                 DispatchQueue.main.async {
                     self?.collectionView.reloadData()
                 }
             }
-        }
+        })
+        
         let flowLayout = UICollectionViewFlowLayout()
         collectionView.collectionViewLayout = flowLayout
     }
