@@ -10,3 +10,4 @@
 ## デザインフッター
 タブではなく、オリジナルにデザインした固定フッダーを利用し、デザインを意識した構成に作りました
 
+![Simulator Screen Recording - iPhone 14 Pro - 2024-06-27 at 10 30 15](https://github.com/smile-salt/WallpeperApp/assets/139315671/439da57d-b1a2-4b4c-bdd3-3a429ff30bb2)
