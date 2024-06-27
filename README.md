@@ -10,4 +10,3 @@
 ## デザインフッター
 タブではなく、オリジナルにデザインした固定フッダーを利用し、デザインを意識した構成に作りました
 
-![Uploading Simulator Screen Recording - iPhone 14 Pro - 2024-06-27 at 10.30.15.gif…]()
