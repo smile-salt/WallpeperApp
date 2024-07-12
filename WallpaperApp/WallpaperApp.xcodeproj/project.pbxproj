@@ -26,6 +26,7 @@
 		E1616BBF2BD209BB00E7A4CB /* UnsplashAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1616BBE2BD209BB00E7A4CB /* UnsplashAPI.swift */; };
 		E1616BC12BD20A1500E7A4CB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1616BC02BD20A1500E7A4CB /* HomeViewController.swift */; };
 		E1616BC32BD21BD000E7A4CB /* WallpaperDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1616BC22BD21BD000E7A4CB /* WallpaperDetailViewController.swift */; };
+		E1944D0F2C37B9C400FA2BB4 /* aaa.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1944D0E2C37B9C400FA2BB4 /* aaa.xib */; };
 		E1FE51222C1BC92B001BA1EC /* AppOverviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FE51212C1BC92A001BA1EC /* AppOverviewViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +52,7 @@
 		E1616BBE2BD209BB00E7A4CB /* UnsplashAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnsplashAPI.swift; sourceTree = "<group>"; };
 		E1616BC02BD20A1500E7A4CB /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		E1616BC22BD21BD000E7A4CB /* WallpaperDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallpaperDetailViewController.swift; sourceTree = "<group>"; };
+		E1944D0E2C37B9C400FA2BB4 /* aaa.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = aaa.xib; sourceTree = "<group>"; };
 		E1FE51212C1BC92A001BA1EC /* AppOverviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppOverviewViewController.swift; path = ../Models/AppOverviewViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -81,9 +83,9 @@
 				3205D11D2C0CAFF3004DEC5A /* ContainerViewController.swift */,
 				E1616BC02BD20A1500E7A4CB /* HomeViewController.swift */,
 				3205D11F2C0CB164004DEC5A /* TagSearchViewController.swift */,
-				E1FE51212C1BC92A001BA1EC /* AppOverviewViewController.swift */,
 				E1616BC22BD21BD000E7A4CB /* WallpaperDetailViewController.swift */,
 				CEC2ED9A2C229C1900835799 /* PhotoDetailViewController.swift */,
+				E1FE51212C1BC92A001BA1EC /* AppOverviewViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -96,6 +98,7 @@
 				3205D1252C0F65CE004DEC5A /* TagCollectionViewCell.xib */,
 				3205D12B2C15ECBB004DEC5A /* SectionHeader.swift */,
 				3205D12C2C15ECBB004DEC5A /* SectionHeader.xib */,
+				E1944D0E2C37B9C400FA2BB4 /* aaa.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -202,6 +205,7 @@
 				E1616BB72BD2078700E7A4CB /* LaunchScreen.storyboard in Resources */,
 				E1616BB42BD2078700E7A4CB /* Assets.xcassets in Resources */,
 				3205D12E2C15ECBB004DEC5A /* SectionHeader.xib in Resources */,
+				E1944D0F2C37B9C400FA2BB4 /* aaa.xib in Resources */,
 				3205D1272C0F65CE004DEC5A /* TagCollectionViewCell.xib in Resources */,
 				E1616BB22BD2078500E7A4CB /* Main.storyboard in Resources */,
 				3205D11B2C0A11E9004DEC5A /* FooterTabView.xib in Resources */,

@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class SectionHeader: UICollectionReusableView {
+class SectionHeader: UICollectionReusableView {
 
     @IBOutlet private var titleLabel: UILabel!
     

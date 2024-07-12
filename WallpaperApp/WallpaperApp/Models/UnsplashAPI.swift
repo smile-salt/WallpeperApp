@@ -13,7 +13,7 @@ class UnsplashAPI {
     
     // 新着画像を取得する
     func fetchLatestWallpapers(numberOfPages: Int, completion: @escaping ([UnsplashPhoto]?) -> Void) {
-        let urlString = "https://api.unsplash.com/photos?per_page=\(numberOfPages)&order_by=latest&client_id=\(accessKey)"
+        let urlString = "https://api.unsplash.com/photos?order_by=latest&per_page=\(numberOfPages)&client_id=\(accessKey)"
         guard let url = URL(string: urlString) else {
             completion(nil)
             return

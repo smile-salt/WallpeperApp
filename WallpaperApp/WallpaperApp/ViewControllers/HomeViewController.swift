@@ -14,7 +14,8 @@ class HomeViewController: UIViewController {
     @IBOutlet private var collectionView: UICollectionView! {
         didSet {
             collectionView.register(WallpaperCollectionViewCell.self, forCellWithReuseIdentifier: cellReuseIdentifier)
-            collectionView.register(UINib(nibName: "SectionHeader", bundle: nil), forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "SectionHeader")
+            collectionView.register(UINib(nibName: "SectionHeader", bundle: nil),
+                                    forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "SectionHeader")
             collectionView.backgroundColor = .white
             collectionView.delegate = self
             collectionView.dataSource = self
@@ -78,7 +79,9 @@ extension HomeViewController: UICollectionViewDataSource {
         return 1
     }
     
+    // コレクションビューのセクションヘッダーを利用するために使用
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        // デキューリユーザブルサキュリメンタリー
         let header = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "SectionHeader", for: indexPath) as! SectionHeader
         header.configure(title: "新着写真")
         return header

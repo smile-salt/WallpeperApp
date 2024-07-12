@@ -29,7 +29,17 @@ class WallpaperDetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         view.backgroundColor = .white
+        
+        if let jaTitle = wallpaper?.alternativeSlug?["ja"],
+           let titleWithoutSuffix = jaTitle.components(separatedBy: "-").first {
+            self.title = titleWithoutSuffix
+        } else if let altDescription = wallpaper?.altDescription {
+            self.title = altDescription
+        } else {
+            self.title = ""
+        }
         
         imageView.image = photoImage
         imageView.isUserInteractionEnabled = true
@@ -46,6 +56,7 @@ class WallpaperDetailViewController: UIViewController {
         self.userNameLabel.attributedText = attributedString
         self.userNameLabel.text = wallpaper.user.username
         self.locationLabel.text = wallpaper.user.location
+        print("ユーザーの名前\(wallpaper.user.username)")
         
         let date = wallpaper.updatedAt.toDate(format: "yyyy-MM-dd'T'HH:mm:ssZ")
         let dateString = date?.toString(format: "yyyy年MM月dd日")
@@ -60,7 +71,10 @@ class WallpaperDetailViewController: UIViewController {
         guard let url = (gesture.view as? UILabel)?.attributedText?.attribute(.link, at: 0, effectiveRange: nil) as? URL else {
             return
         }
-        UIApplication.shared.open(url)
+        
+        let profileVC = AppOverviewViewController()
+        profileVC.profileURL = url
+        present(profileVC, animated: true)
     }
     
     @objc func tappedPhotoImage() {
