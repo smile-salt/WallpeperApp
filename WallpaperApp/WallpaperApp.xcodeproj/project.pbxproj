@@ -13,20 +13,20 @@
 		3205D1202C0CB164004DEC5A /* TagSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3205D11F2C0CB164004DEC5A /* TagSearchViewController.swift */; };
 		3205D1262C0F65CE004DEC5A /* TagCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3205D1242C0F65CE004DEC5A /* TagCollectionViewCell.swift */; };
 		3205D1272C0F65CE004DEC5A /* TagCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3205D1252C0F65CE004DEC5A /* TagCollectionViewCell.xib */; };
-		3205D12A2C1200E6004DEC5A /* SearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3205D1292C1200E6004DEC5A /* SearchResponse.swift */; };
+		3205D12A2C1200E6004DEC5A /* UnsplashPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3205D1292C1200E6004DEC5A /* UnsplashPhoto.swift */; };
 		3205D12D2C15ECBB004DEC5A /* SectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3205D12B2C15ECBB004DEC5A /* SectionHeader.swift */; };
 		3205D12E2C15ECBB004DEC5A /* SectionHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3205D12C2C15ECBB004DEC5A /* SectionHeader.xib */; };
 		CEC2ED9B2C229C1900835799 /* PhotoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC2ED9A2C229C1900835799 /* PhotoDetailViewController.swift */; };
 		E1065FE22BD22DD100D3C73A /* WallpaperCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1065FE12BD22DD100D3C73A /* WallpaperCollectionViewCell.swift */; };
 		E1616BAB2BD2078500E7A4CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1616BAA2BD2078500E7A4CB /* AppDelegate.swift */; };
 		E1616BAD2BD2078500E7A4CB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1616BAC2BD2078500E7A4CB /* SceneDelegate.swift */; };
-		E1616BAF2BD2078500E7A4CB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1616BAE2BD2078500E7A4CB /* ViewController.swift */; };
 		E1616BB22BD2078500E7A4CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1616BB02BD2078500E7A4CB /* Main.storyboard */; };
 		E1616BB42BD2078700E7A4CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1616BB32BD2078700E7A4CB /* Assets.xcassets */; };
 		E1616BB72BD2078700E7A4CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1616BB52BD2078700E7A4CB /* LaunchScreen.storyboard */; };
-		E1616BBF2BD209BB00E7A4CB /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1616BBE2BD209BB00E7A4CB /* API.swift */; };
+		E1616BBF2BD209BB00E7A4CB /* UnsplashAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1616BBE2BD209BB00E7A4CB /* UnsplashAPI.swift */; };
 		E1616BC12BD20A1500E7A4CB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1616BC02BD20A1500E7A4CB /* HomeViewController.swift */; };
 		E1616BC32BD21BD000E7A4CB /* WallpaperDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1616BC22BD21BD000E7A4CB /* WallpaperDetailViewController.swift */; };
+		E1944D0F2C37B9C400FA2BB4 /* aaa.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1944D0E2C37B9C400FA2BB4 /* aaa.xib */; };
 		E1FE51222C1BC92B001BA1EC /* AppOverviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FE51212C1BC92A001BA1EC /* AppOverviewViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -37,7 +37,7 @@
 		3205D11F2C0CB164004DEC5A /* TagSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagSearchViewController.swift; sourceTree = "<group>"; };
 		3205D1242C0F65CE004DEC5A /* TagCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagCollectionViewCell.swift; sourceTree = "<group>"; };
 		3205D1252C0F65CE004DEC5A /* TagCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TagCollectionViewCell.xib; sourceTree = "<group>"; };
-		3205D1292C1200E6004DEC5A /* SearchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResponse.swift; sourceTree = "<group>"; };
+		3205D1292C1200E6004DEC5A /* UnsplashPhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnsplashPhoto.swift; sourceTree = "<group>"; };
 		3205D12B2C15ECBB004DEC5A /* SectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeader.swift; sourceTree = "<group>"; };
 		3205D12C2C15ECBB004DEC5A /* SectionHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SectionHeader.xib; sourceTree = "<group>"; };
 		CEC2ED9A2C229C1900835799 /* PhotoDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailViewController.swift; sourceTree = "<group>"; };
@@ -45,14 +45,14 @@
 		E1616BA72BD2078500E7A4CB /* WallpaperApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WallpaperApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1616BAA2BD2078500E7A4CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E1616BAC2BD2078500E7A4CB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E1616BAE2BD2078500E7A4CB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E1616BB12BD2078500E7A4CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E1616BB32BD2078700E7A4CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E1616BB62BD2078700E7A4CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E1616BB82BD2078700E7A4CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E1616BBE2BD209BB00E7A4CB /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		E1616BBE2BD209BB00E7A4CB /* UnsplashAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnsplashAPI.swift; sourceTree = "<group>"; };
 		E1616BC02BD20A1500E7A4CB /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		E1616BC22BD21BD000E7A4CB /* WallpaperDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallpaperDetailViewController.swift; sourceTree = "<group>"; };
+		E1944D0E2C37B9C400FA2BB4 /* aaa.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = aaa.xib; sourceTree = "<group>"; };
 		E1FE51212C1BC92A001BA1EC /* AppOverviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppOverviewViewController.swift; path = ../Models/AppOverviewViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -83,9 +83,9 @@
 				3205D11D2C0CAFF3004DEC5A /* ContainerViewController.swift */,
 				E1616BC02BD20A1500E7A4CB /* HomeViewController.swift */,
 				3205D11F2C0CB164004DEC5A /* TagSearchViewController.swift */,
-				E1FE51212C1BC92A001BA1EC /* AppOverviewViewController.swift */,
 				E1616BC22BD21BD000E7A4CB /* WallpaperDetailViewController.swift */,
 				CEC2ED9A2C229C1900835799 /* PhotoDetailViewController.swift */,
+				E1FE51212C1BC92A001BA1EC /* AppOverviewViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -98,6 +98,7 @@
 				3205D1252C0F65CE004DEC5A /* TagCollectionViewCell.xib */,
 				3205D12B2C15ECBB004DEC5A /* SectionHeader.swift */,
 				3205D12C2C15ECBB004DEC5A /* SectionHeader.xib */,
+				E1944D0E2C37B9C400FA2BB4 /* aaa.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -105,7 +106,8 @@
 		3205D1282C1200A7004DEC5A /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				3205D1292C1200E6004DEC5A /* SearchResponse.swift */,
+				3205D1292C1200E6004DEC5A /* UnsplashPhoto.swift */,
+				E1616BBE2BD209BB00E7A4CB /* UnsplashAPI.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -134,8 +136,6 @@
 				3205D1172C0A1155004DEC5A /* Views */,
 				E1616BAA2BD2078500E7A4CB /* AppDelegate.swift */,
 				E1616BAC2BD2078500E7A4CB /* SceneDelegate.swift */,
-				E1616BAE2BD2078500E7A4CB /* ViewController.swift */,
-				E1616BBE2BD209BB00E7A4CB /* API.swift */,
 				E1616BB02BD2078500E7A4CB /* Main.storyboard */,
 				E1616BB32BD2078700E7A4CB /* Assets.xcassets */,
 				E1616BB52BD2078700E7A4CB /* LaunchScreen.storyboard */,
@@ -205,6 +205,7 @@
 				E1616BB72BD2078700E7A4CB /* LaunchScreen.storyboard in Resources */,
 				E1616BB42BD2078700E7A4CB /* Assets.xcassets in Resources */,
 				3205D12E2C15ECBB004DEC5A /* SectionHeader.xib in Resources */,
+				E1944D0F2C37B9C400FA2BB4 /* aaa.xib in Resources */,
 				3205D1272C0F65CE004DEC5A /* TagCollectionViewCell.xib in Resources */,
 				E1616BB22BD2078500E7A4CB /* Main.storyboard in Resources */,
 				3205D11B2C0A11E9004DEC5A /* FooterTabView.xib in Resources */,
@@ -218,12 +219,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3205D12A2C1200E6004DEC5A /* SearchResponse.swift in Sources */,
+				3205D12A2C1200E6004DEC5A /* UnsplashPhoto.swift in Sources */,
 				E1616BC12BD20A1500E7A4CB /* HomeViewController.swift in Sources */,
-				E1616BAF2BD2078500E7A4CB /* ViewController.swift in Sources */,
 				E1FE51222C1BC92B001BA1EC /* AppOverviewViewController.swift in Sources */,
 				E1616BC32BD21BD000E7A4CB /* WallpaperDetailViewController.swift in Sources */,
-				E1616BBF2BD209BB00E7A4CB /* API.swift in Sources */,
+				E1616BBF2BD209BB00E7A4CB /* UnsplashAPI.swift in Sources */,
 				E1616BAB2BD2078500E7A4CB /* AppDelegate.swift in Sources */,
 				CEC2ED9B2C229C1900835799 /* PhotoDetailViewController.swift in Sources */,
 				E1065FE22BD22DD100D3C73A /* WallpaperCollectionViewCell.swift in Sources */,

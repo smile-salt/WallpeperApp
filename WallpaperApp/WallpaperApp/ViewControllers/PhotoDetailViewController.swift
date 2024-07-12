@@ -13,6 +13,7 @@ class PhotoDetailViewController: UIViewController {
     @IBOutlet weak var imageView: UIImageView!
     
     var photoImage: UIImage?
+    var wallaper: UnsplashAPI?
     
     override func viewDidLoad() {
         super.viewDidLoad()

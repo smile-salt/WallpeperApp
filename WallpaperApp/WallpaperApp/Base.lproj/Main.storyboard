@@ -115,6 +115,12 @@
                                     </stackView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oja-jB-hEY">
                                         <rect key="frame" x="0.0" y="147.00000000000006" width="363" height="1"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DI3-rc-AdP">
+                                                <rect key="frame" x="0.0" y="-55.333333333333258" width="363" height="110"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </stackView>
+                                        </subviews>
                                         <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="1" id="8rG-oA-QeI"/>
@@ -151,6 +157,37 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3481.679389312977" y="-385.21126760563385"/>
+        </scene>
+        <!--App Overview View Controller-->
+        <scene sceneID="ZTK-S4-E7b">
+            <objects>
+                <viewController id="dkB-Vk-5D0" customClass="AppOverviewViewController" customModule="WallpaperApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Q0i-ia-kSv">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gdQ-aq-YS3">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="wHa-ej-We7"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gdQ-aq-YS3" firstAttribute="top" secondItem="wHa-ej-We7" secondAttribute="top" id="Cbs-gn-mSI"/>
+                            <constraint firstItem="gdQ-aq-YS3" firstAttribute="leading" secondItem="wHa-ej-We7" secondAttribute="leading" id="aZj-QF-Hed"/>
+                            <constraint firstItem="wHa-ej-We7" firstAttribute="bottom" secondItem="gdQ-aq-YS3" secondAttribute="bottom" id="cbS-uh-Rs6"/>
+                            <constraint firstItem="wHa-ej-We7" firstAttribute="trailing" secondItem="gdQ-aq-YS3" secondAttribute="trailing" id="jdV-eg-EMf"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HHK-SQ-v4V" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3482" y="420"/>
         </scene>
         <!--Photo Detail View Controller-->
         <scene sceneID="rfy-cf-Wxl">
@@ -209,7 +246,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZHm-KH-hxU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4762" y="-139"/>
+            <point key="canvasLocation" x="4758" y="-385"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="j5O-zd-Raw">

@@ -7,37 +7,13 @@
 
 import Foundation
 
-struct UnsplashPhoto: Decodable {
-    let id: String
-    let updatedAt: String
-    let urls: UnsplashPhotoURLs
-    let user: UnsplashUser
+class UnsplashAPI {
     
-    enum CodingKeys: String, CodingKey {
-        case id
-        case updatedAt = "updated_at"
-        case urls
-        case user
-    }
-}
-
-struct UnsplashUser: Codable {
-    let username: String
-    let name: String
-    let location: String?
-}
-
-struct UnsplashPhotoURLs: Codable {
-    let regular: String
-    let full: String
-}
-
-class UnsplashAPIService {
     private let accessKey = "hZ6EuwcBL2h8ybpYbcLTWVtleTTDznHszzlMP0e5dwQ"
     
-    // 新着画像を5枚取得する
-    func fetchLatestWallpapers(completion: @escaping ([UnsplashPhoto]?) -> Void) {
-        let urlString = "https://api.unsplash.com/photos?per_page=5&order_by=latest&client_id=\(accessKey)"
+    // 新着画像を取得する
+    func fetchLatestWallpapers(numberOfPages: Int, completion: @escaping ([UnsplashPhoto]?) -> Void) {
+        let urlString = "https://api.unsplash.com/photos?order_by=latest&per_page=\(numberOfPages)&client_id=\(accessKey)"
         guard let url = URL(string: urlString) else {
             completion(nil)
             return
@@ -65,9 +41,9 @@ class UnsplashAPIService {
         }.resume()
     }
     
-    // 色指定で画像を5枚取得する
-    func searchWallpapers(colorTag: ColorTag, completion: @escaping ([UnsplashPhoto]?) -> Void) {
-        let urlString = "https://api.unsplash.com/search/photos?query=\(colorTag.rawValue)&per_page=5&color=\(colorTag.rawValue)&client_id=\(accessKey)"
+    // 色指定で画像を取得する
+    func searchWallpapersByColor(numberOfPages: Int, colorTag: ColorTag, completion: @escaping ([UnsplashPhoto]?) -> Void) {
+        let urlString = "https://api.unsplash.com/search/photos?query=\(colorTag.rawValue)&per_page=\(numberOfPages)&color=\(colorTag.rawValue)&client_id=\(accessKey)"
         guard let url = URL(string: urlString) else {
             completion(nil)
             return
@@ -92,4 +68,9 @@ class UnsplashAPIService {
             }
         }.resume()
     }
+}
+
+// SearchのAPIは画像を取得する際の階層がfetchと異なる
+struct SearchResponse: Decodable {
+    let results: [UnsplashPhoto]
 }

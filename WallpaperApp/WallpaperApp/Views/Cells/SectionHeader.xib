@@ -29,7 +29,7 @@
             <connections>
                 <outlet property="titleLabel" destination="e5u-i4-3sC" id="SWG-gL-Jxz"/>
             </connections>
-            <point key="canvasLocation" x="-2" y="20"/>
+            <point key="canvasLocation" x="-3.0534351145038165" y="19.718309859154932"/>
         </collectionReusableView>
     </objects>
 </document>
